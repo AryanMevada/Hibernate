@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #dcedc8, #f1f8e9);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h3 {
+            color: #388e3c;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #43a047;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2e7d32;
+        }
+
+        @media (max-width: 450px) {
+            .success-container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h3>✅ Operation completed successfully!</h3>
+        <a href="index.html">🏠 Back to Home</a>
+    </div>
+     <div class="back-link">
+        <a href="index.html">🏠 Back to Dashboard</a>
+    </div>
+</body>
+</html>

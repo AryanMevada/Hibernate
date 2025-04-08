@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Update Student</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #fce4ec);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1565c0;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 90%;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            border-color: #42a5f5;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d47a1;
+        }
+
+        @media (max-width: 450px) {
+            .form-container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            input[type="text"],
+            input[type="number"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>✏️ Update Student</h2>
+        <form action="student" method="post">
+            <input type="hidden" name="action" value="update" />
+
+            <input type="number" name="rollno" placeholder="Roll No (to update)" required><br>
+            <input type="text" name="name" placeholder="New Name" required><br>
+            <input type="text" name="course" placeholder="New Course" required><br>
+            <input type="text" name="contact" placeholder="New Contact" required><br>
+
+            <input type="submit" value="Update Student">
+        </form>
+    </div>
+    
+     <div class="back-link">
+        <a href="index.html">🏠 Back to Dashboard</a>
+    </div>
+    
+</body>
+</html>

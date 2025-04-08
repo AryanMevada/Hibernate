@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Students</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f1f8e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2e7d32;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #33691e;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-left: 6px solid #43a047;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card p {
+            margin: 8px 0;
+            color: #424242;
+        }
+
+        .card strong {
+            color: #1b5e20;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #dcedc8;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .back-link a:hover {
+            background-color: #aed581;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+        <nav>
+            <a href="index.html">🏠 Dashboard</a>
+            <a href="add-student.html">➕ Add Student</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>📋 All Students</h2>
+
+        <!-- Sample student cards -->
+        <div class="card">
+            <p><strong>Roll No:</strong> 101</p>
+            <p><strong>Name:</strong> Aryan Mevada</p>
+            <p><strong>Enrollment ID:</strong> 22IT1023</p>
+            <p><strong>Course:</strong> IT</p>
+            <p><strong>Contact:</strong> 9876543210</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Roll No:</strong> 102</p>
+            <p><strong>Name:</strong> Priya Shah</p>
+            <p><strong>Enrollment ID:</strong> 22IT1050</p>
+            <p><strong>Course:</strong> CSE</p>
+            <p><strong>Contact:</strong> 9988776655</p>
+        </div>
+
+        <!-- More cards can be dynamically generated here -->
+
+        <div class="back-link">
+            <a href="index.html">⬅ Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

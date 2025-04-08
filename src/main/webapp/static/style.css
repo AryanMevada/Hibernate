@@ -1,0 +1,96 @@
+/* Page background and font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fff3e0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Form container box */
+.form-container {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Page heading */
+h1, h2, h3 {
+    color: #0d47a1;
+    text-align: center;
+}
+
+/* Labels and inputs */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #37474f;
+    text-align: left;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #0288d1;
+    outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d47a1;
+}
+
+/* Back link or nav */
+.back-link, .nav-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a,
+.nav-link a {
+    text-decoration: none;
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.back-link a:hover,
+.nav-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+    .form-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
